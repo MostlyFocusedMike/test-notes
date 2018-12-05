@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot } from 'react-hot-loader'
 import './App.css';
 import NotesDir from './components/NotesDir'
 import Routes from './routes'
@@ -44,4 +45,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default hot(module)(App)

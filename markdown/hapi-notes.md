@@ -1016,7 +1016,7 @@ FILE: lib/public/index.html
 ---------------------------------------------------------------------------------------------------------------------
 # SECTION 5: VIEWS
 
-
+- serving static assets are fine, but what about doing something like views? 
 
 
 
