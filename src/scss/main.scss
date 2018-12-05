@@ -1,0 +1,154 @@
+input, label {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea {
+
+}
+button {
+  display: block;
+  margin: 2rem;
+}
+
+code {
+  white-space: pre-wrap;
+  background: rgb(216, 216, 216);
+  color: rgb(21, 21, 21);
+  display: block;
+  font-weight: bold;
+  width: 90%;
+  line-height: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+code + p {
+  margin: 0;
+  padding: 0;
+}
+
+p code {
+  padding: 1rem;
+  margin: 0;
+}
+
+code p {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 99vh;
+  background: #676767;
+  .note {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    form {
+      width: 47%;
+
+      color: #FFF;
+      min-width: 500px;
+      flex-basis: auto; /* default value */
+      flex: 1;
+      margin: 0;
+      textarea {
+        height: 75vh;
+        margin: 1rem auto;
+        width: 100%;
+        overflow-x: hidden;
+        display: block;
+        margin: 1rem auto;
+        font-size: 1rem;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+    }
+    #md-preview {
+      overflow-x: hidden;
+      background: #FFF;
+      flex: 1;
+      height: 95vh;
+      max-width: 50rem;
+      min-width: 22rem;
+      margin: 0;
+      padding: 1rem;
+      padding-bottom: 8rem;
+      font-size: 1.1rem;
+      h2 {
+        color: #363;
+        line-height: 2.5rem;
+      }
+
+    }
+    #mode-bar {
+      width: 100%;
+      background: #000;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      height: 3rem;
+      display: flex;
+      flex-wrap: no-wrap;
+      justify-content: center;
+      align-items: center;
+      button {
+        display: block;
+        margin: 1rem;
+      }
+    }
+    #table-of-contents {
+      background: #FFF;
+      a {
+        display: block;
+        margin: 1rem;
+      }
+    }
+  }
+  #notes-dir {
+    width: 9%;
+    margin: 0;
+    min-width: 100px;
+    overflow: auto;
+    background: #222;
+    color: white;
+    a {
+      display: block;
+      margin: .5rem;
+      color: white;
+    }
+    #new-file-modal {
+      position: fixed;
+      left: 25%;
+      width: 50%;
+      z-index: 10;
+      color: #000;
+      background: white;
+    }
+  }
+} 
+
+hr {
+  color: green;
+  background-color: green;
+  height: .2rem;
+  border: none;
+}
+
+textarea, input, p {
+  line-height: 1.5rem;
+};
